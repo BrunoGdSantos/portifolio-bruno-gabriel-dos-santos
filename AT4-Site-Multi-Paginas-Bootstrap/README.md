@@ -30,3 +30,8 @@ O projeto resultou em um site multipágina com conteúdo organizado e navegaçã
 Este projeto pode utilizar ferramentas de inteligência artificial, como ChatGPT ou GitHub Copilot, como suporte ao desenvolvimento, incluindo auxílio na compreensão de conceitos, sugestões de estruturação HTML e CSS e identificação de possíveis melhorias no código.
 
 As sugestões geradas por inteligência artificial devem ser revisadas, testadas e compreendidas antes de sua utilização, mantendo a responsabilidade dos desenvolvedores sobre a autoria, integridade e funcionamento final da aplicação.
+
+## 💻 Deploy do projeto
+[Clique para acessar](https://brunogdsantos.github.io/AT4/)
+---
+[Voltar ao início](https://github.com/BrunoGdSantos/portifolio-bruno-gabriel-dos-santos)
