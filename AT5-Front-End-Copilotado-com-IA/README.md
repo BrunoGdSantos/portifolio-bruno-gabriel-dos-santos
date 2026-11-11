@@ -34,3 +34,8 @@ Este projeto utilizou inteligência artificial como ferramenta de suporte tecnol
 O uso da inteligência artificial foi acompanhado de revisão e validação das sugestões, mantendo a responsabilidade dos desenvolvedores pela compreensão, integridade e funcionamento final da aplicação.
 
 A transparência sobre o uso de IA e as referências utilizadas no projeto são apresentadas na documentação correspondente, incluindo o arquivo AUDITORIA_IA.md.
+
+## 💻 Deploy do projeto
+[Clique para acessar](https://brunogdsantos.github.io/AT5-LinkedIn-e-a-performance-da-carreira/)
+---
+[Voltar ao início](https://github.com/BrunoGdSantos/portifolio-bruno-gabriel-dos-santos)
