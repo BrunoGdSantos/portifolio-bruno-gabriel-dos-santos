@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Comparação - James Webb</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="descobertas.html">Descobertas</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="comparacao.html" class="active">Comparação</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>Webb vs Hubble.</h1>
+        <p class="subtitle">Eles não são concorrentes, mas sim complementares. Entenda as diferenças técnicas entre as duas maiores lendas da astronomia.</p>
+
+        <div class="bento-grid">
+            <article class="bento-card">
+                <span class="tag">Espectro</span>
+                <h3>Tipo de Luz</h3>
+                <p>Enquanto o Hubble enxerga essencialmente a luz visível (como nós), o Webb capta o infravermelho térmico, atravessando a poeira cósmica densa.</p>
+                <img src="image/infravermelho.jpg" data-highres="image/infravermelho.jpg" alt="Comparação de luz">
+            </article>
+
+            <article class="bento-card">
+                <span class="tag">Hardware</span>
+                <h3>Tamanho do Espelho</h3>
+                <p>O espelho primário do Hubble possui 2,4 metros. O Webb o supera com um imenso espelho segmentado banhado a ouro medindo 6,5 metros de diâmetro.</p>
+                <img src="image/espelho.jpg" data-highres="image/espelho.jpg" alt="Diferença de espelhos">
+            </article>
+
+            <article class="bento-card">
+                <span class="tag">Localização</span>
+                <h3>Distância e Órbita</h3>
+                <p>O Hubble orbita perto da Terra (a 547 km de altitude). O Webb viajou para uma posição distante e isolada no Ponto de Lagrange L2 (1,5 milhão de km).</p>
+                <img src="image/L2.jpg" data-highres="image/L2.jpg" alt="Órbitas">
+            </article>
+
+            <article class="bento-card">
+                <span class="tag">Geração</span>
+                <h3>Era Tecnológica</h3>
+                <p>Lançado em 1990, o Hubble carrega a tecnologia de sua época. O James Webb (2021) representa o ápice moderno da engenharia espacial e óptica.</p>
+                <img src="image/comp.jpg" data-highres="image/comp.jpg" alt="Comparativo de eras">
+            </article>
+        </div>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2026 Telescópio James Webb.</p>
+        <p>Desenvolvido por Bruno Gabriel e Alex Sander</p>
+    </footer>
+
+    <!-- MODAL E SCRIPT DE ZOOM -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn">&times;</span>
+        <p id="loadingText" style="position: absolute; color: white; font-size: 1.2rem; display: none; z-index: 1999;">Carregando alta resolução...</p>
+        <img class="modal-content" id="expandedImg">
+    </div>
+
+    <script>
+        const modal = document.getElementById("imageModal");
+        const expandedImg = document.getElementById("expandedImg");
+        const closeBtn = document.querySelector(".close-btn");
+        const loadingText = document.getElementById("loadingText");
+        const allImages = document.querySelectorAll("main img");
+
+        allImages.forEach(img => {
+            img.addEventListener("click", function() {
+                modal.classList.add("show");
+                loadingText.style.display = "block";
+                expandedImg.style.opacity = "0"; 
+                
+                const highResUrl = this.getAttribute("data-highres") || this.src;
+                expandedImg.src = highResUrl;
+
+                expandedImg.onload = function() {
+                    loadingText.style.display = "none";
+                    expandedImg.style.opacity = "1";
+                }
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove("show");
+            setTimeout(() => { expandedImg.src = ""; }, 300);
+        }
+
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", function(e) {
+            if (e.target === modal || e.target === loadingText) closeModal();
+        });
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") closeModal();
+        });
+    </script>
+</body>
+</html>

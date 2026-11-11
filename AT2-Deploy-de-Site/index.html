@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Início - James Webb</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="descobertas.html">Descobertas</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="comparacao.html">Comparação</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>O universo revelado.</h1>
+        <p class="subtitle">Descubra as maravilhas do cosmos através dos espelhos dourados do Telescópio Espacial James Webb.</p>
+        
+        <!-- Texto centralizado fora de cartões -->
+        <p class="subtitle" style="margin-top: -30px; margin-bottom: 50px;">O Telescópio Espacial James Webb é a principal maravilha da engenharia astronômica moderna. Este projeto é dedicado a fornecer informações sobre suas descobertas revolucionárias e imagens impressionantes do invisível.</p>
+
+        <img src="image/james.jpg" data-highres="image/james.jpg" alt="Telescópio Espacial James Webb" class="hero-img">
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2026 Telescópio James Webb.</p>
+        <p>Desenvolvido por Bruno Gabriel e Alex Sander</p>
+    </footer>
+
+    <!-- MODAL E SCRIPT PARA AMPLIAR IMAGENS -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn">&times;</span>
+        <p id="loadingText" style="position: absolute; color: white; font-size: 1.2rem; display: none; z-index: 1999;">Carregando alta resolução...</p>
+        <img class="modal-content" id="expandedImg">
+    </div>
+
+    <script>
+        const modal = document.getElementById("imageModal");
+        const expandedImg = document.getElementById("expandedImg");
+        const closeBtn = document.querySelector(".close-btn");
+        const loadingText = document.getElementById("loadingText");
+        const allImages = document.querySelectorAll("main img");
+
+        allImages.forEach(img => {
+            img.addEventListener("click", function() {
+                modal.classList.add("show");
+                loadingText.style.display = "block";
+                expandedImg.style.opacity = "0"; 
+                
+                const highResUrl = this.getAttribute("data-highres") || this.src;
+                expandedImg.src = highResUrl;
+
+                expandedImg.onload = function() {
+                    loadingText.style.display = "none";
+                    expandedImg.style.opacity = "1";
+                }
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove("show");
+            setTimeout(() => { expandedImg.src = ""; }, 300);
+        }
+
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", function(e) {
+            if (e.target === modal || e.target === loadingText) closeModal();
+        });
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") closeModal();
+        });
+    </script>
+</body>
+</html>

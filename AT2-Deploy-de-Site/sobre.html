@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sobre - James Webb</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html" class="active">Sobre</a></li>
+            <li><a href="descobertas.html">Descobertas</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="comparacao.html">Comparação</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>A Missão.</h1>
+        <p class="subtitle">Conheça a história, a engenharia e o lançamento do maior observatório espacial já construído.</p>
+
+        <div class="bento-grid">
+            <article class="bento-card">
+                <span class="tag">Origem</span>
+                <h3>História e Parceria</h3>
+                <p>O JWST é um observatório espacial desenvolvido pela NASA em colaboração direta com a Agência Espacial Europeia (ESA) e a Agência Espacial Canadense (CSA), desenhado para suceder o Hubble.</p>
+            </article>
+
+            <article class="bento-card">
+                <span class="tag">Dezembro 2021</span>
+                <h3>O Lançamento</h3>
+                <p>Lançado no dia 25 de dezembro a bordo de um foguete Ariane 5, a partir da Guiana Francesa. O telescópio passou por dezenas de etapas críticas de abertura no vácuo.</p>
+                <img src="image/ariane.jpg" data-highres="image/ariane.jpg" alt="Foguete Ariane 5">
+            </article>
+
+            <article class="bento-card">
+                <span class="tag">Destino</span>
+                <h3>Órbita em L2</h3>
+                <p>O James Webb não orbita a Terra. Ele repousa no Ponto de Lagrange L2, a cerca de 1,5 milhão de quilômetros de nós, operando em temperaturas extremamente baixas.</p>
+                <img src="image/L2.jpg" data-highres="image/L2.jpg" alt="Órbita no ponto L2">
+            </article>
+        </div>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2026 Telescópio James Webb.</p>
+        <p>Desenvolvido por Bruno Gabriel e Alex Sander</p>
+    </footer>
+
+    <!-- MODAL E SCRIPT DE ZOOM -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn">&times;</span>
+        <p id="loadingText" style="position: absolute; color: white; font-size: 1.2rem; display: none; z-index: 1999;">Carregando alta resolução...</p>
+        <img class="modal-content" id="expandedImg">
+    </div>
+
+    <script>
+        const modal = document.getElementById("imageModal");
+        const expandedImg = document.getElementById("expandedImg");
+        const closeBtn = document.querySelector(".close-btn");
+        const loadingText = document.getElementById("loadingText");
+        const allImages = document.querySelectorAll("main img");
+
+        allImages.forEach(img => {
+            img.addEventListener("click", function() {
+                modal.classList.add("show");
+                loadingText.style.display = "block";
+                expandedImg.style.opacity = "0"; 
+                
+                const highResUrl = this.getAttribute("data-highres") || this.src;
+                expandedImg.src = highResUrl;
+
+                expandedImg.onload = function() {
+                    loadingText.style.display = "none";
+                    expandedImg.style.opacity = "1";
+                }
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove("show");
+            setTimeout(() => { expandedImg.src = ""; }, 300);
+        }
+
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", function(e) {
+            if (e.target === modal || e.target === loadingText) closeModal();
+        });
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") closeModal();
+        });
+    </script>
+</body>
+</html>

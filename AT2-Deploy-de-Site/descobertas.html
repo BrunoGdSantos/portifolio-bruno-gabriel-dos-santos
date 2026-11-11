@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Descobertas - James Webb</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="descobertas.html" class="active">Descobertas</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="comparacao.html">Comparação</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>Reescrevendo a ciência.</h1>
+        <p class="subtitle">As principais descobertas que estão mudando profundamente a nossa compreensão sobre a física e o cosmos.</p>
+
+        <div class="bento-grid">
+            <article class="bento-card">
+                <span class="tag">Infância do Universo</span>
+                <h3>As Primeiras Galáxias</h3>
+                <p>O telescópio capturou luz de galáxias formadas há mais de 13,5 bilhões de anos, revelando estruturas primitivas imensas formadas logo após o Big Bang.</p>
+                <img src="image/deep.jpg" data-highres="image/deep.jpg" alt="Galáxias antigas">
+            </article>
+
+            <article class="bento-card">
+                <span class="tag">Exoplanetas</span>
+                <h3>Atmosferas Alienígenas</h3>
+                <p>Identificação de assinaturas químicas claras de dióxido de carbono e vapor de água na atmosfera de mundos gigantes fora do nosso sistema solar.</p>
+                <img src="image/planeta.jpg" data-highres="image/planeta.jpg" alt="Exoplaneta">
+            </article>
+
+            <article class="bento-card">
+                <span class="tag">Gênesis</span>
+                <h3>Berçários Estelares</h3>
+                <p>O infravermelho permitiu atravessar nuvens espessas de poeira para observar, com detalhes inéditos, estrelas nascendo e esculpindo o espaço.</p>
+                <img src="image/carina.jpg" data-highres="image/carina.jpg" alt="Formação estelar">
+            </article>
+
+            <article class="bento-card">
+                <span class="tag">Nosso Quintal</span>
+                <h3>Visão do Sistema Solar</h3>
+                <p>Observações detalhadas de vizinhos próximos revelaram auroras brilhantes em Júpiter e dados inéditos sobre cometas e asteroides.</p>
+                <img src="image/jupiter.jpg" data-highres="image/jupiter.jpg" alt="Planeta Júpiter">
+            </article>
+        </div>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2026 Telescópio James Webb.</p>
+        <p>Desenvolvido por Bruno Gabriel e Alex Sander</p>
+    </footer>
+
+    <!-- MODAL E SCRIPT DE ZOOM -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn">&times;</span>
+        <p id="loadingText" style="position: absolute; color: white; font-size: 1.2rem; display: none; z-index: 1999;">Carregando alta resolução...</p>
+        <img class="modal-content" id="expandedImg">
+    </div>
+
+    <script>
+        const modal = document.getElementById("imageModal");
+        const expandedImg = document.getElementById("expandedImg");
+        const closeBtn = document.querySelector(".close-btn");
+        const loadingText = document.getElementById("loadingText");
+        const allImages = document.querySelectorAll("main img");
+
+        allImages.forEach(img => {
+            img.addEventListener("click", function() {
+                modal.classList.add("show");
+                loadingText.style.display = "block";
+                expandedImg.style.opacity = "0"; 
+                
+                const highResUrl = this.getAttribute("data-highres") || this.src;
+                expandedImg.src = highResUrl;
+
+                expandedImg.onload = function() {
+                    loadingText.style.display = "none";
+                    expandedImg.style.opacity = "1";
+                }
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove("show");
+            setTimeout(() => { expandedImg.src = ""; }, 300);
+        }
+
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", function(e) {
+            if (e.target === modal || e.target === loadingText) closeModal();
+        });
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") closeModal();
+        });
+    </script>
+</body>
+</html>
