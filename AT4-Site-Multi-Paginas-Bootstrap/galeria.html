@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>História dos videogames</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Start</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="sobre.html">Lore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galeria.html">Reliquias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dados.html">Easter-eggs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Fale Conosco</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <h1 class="text-center py-5">Galeria dos Clássicos: Jogos que Marcaram Consoles e Eras</h1>
+
+  <h2 class="text-center py-5">Clássicos e Fundadores da Era 2D</h2>
+  <div class="card-group">
+    <div class="card">
+      <img src="img/pacman.png" class="card-img-top" alt="Pac-Man em seu labirinto">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">Pac-Man</h4>
+        <p class="card-text">Ano de Lançamento: 1980 (Arcade) / 1982 (Atari 2600)</p>
+        <p class="card-text">Plataformas: Atari 2600, Arcades, NES, Game Boy e plataformas modernas.</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalPacman">Ver mais</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/sonic2.png" class="card-img-top" alt="Sonic the Hedgehog 2">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">Sonic the Hedgehog 2</h4>
+        <p class="card-text">Ano de Lançamento: 1992</p>
+        <p class="card-text">Plataformas: SEGA Mega Drive, Master System, Game Gear, iOS, Android e coletâneas em consoles modernos.</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalSonic2">Ver mais</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/supermario2.png" class="card-img-top" alt="Super Mario World">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">Super Mario World</h4>
+        <p class="card-text">Ano de Lançamento: 1990 (Japão)</p>
+        <p class="card-text">Plataformas: Super Nintendo, Game Boy Advance, Virtual Console e Nintendo Switch Online.</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalMarioWorld">Ver mais</button>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-center py-5">Revolucionários da Era 3D</h2>
+  <div class="card-group">
+    <div class="card">
+      <img src="img/maario64.png" class="card-img-top" alt="Super Mario 64">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">Super Mario 64</h4>
+        <p class="card-text">Ano de Lançamento: 1996</p>
+        <p class="card-text">Plataformas: Nintendo 64, Nintendo DS, Virtual Console e Nintendo Switch.</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalMario64">Ver mais</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/finalfantasy7.png" class="card-img-top" alt="Final Fantasy VII">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">Final Fantasy VII</h4>
+        <p class="card-text">Ano de Lançamento: 1997</p>
+        <p class="card-text">Plataformas: PlayStation 1, PC, PS4, Xbox One, Nintendo Switch, iOS e Android.</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalFF7">Ver mais</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/gtasa1.png" class="card-img-top" alt="Grand Theft Auto: San Andreas">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">Grand Theft Auto: San Andreas</h4>
+        <p class="card-text">Ano de Lançamento: 2004</p>
+        <p class="card-text">Plataformas: PlayStation 2, Xbox, PC, Xbox 360, PS3, PS4, PS5, Xbox Series X/S, iOS e Android.</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalGtaSA">Ver mais</button>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-center py-5">Gigantes da Era HD e Online</h2>
+  <div class="card-group">
+    <div class="card">
+      <img src="img/halo3.png" class="card-img-top" alt="Halo 3">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">Halo 3</h4>
+        <p class="card-text">Ano de Lançamento: 2007</p>
+        <p class="card-text">Plataformas: Xbox 360, Xbox One, Xbox Series X/S e PC (Master Chief Collection).</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalHalo3">Ver mais</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/gta5.png" class="card-img-top" alt="Grand Theft Auto V">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">Grand Theft Auto V (GTA V)</h4>
+        <p class="card-text">Ano de Lançamento: 2013</p>
+        <p class="card-text">Plataformas: PS3, Xbox 360, PS4, Xbox One, PS5, Xbox Series X/S e PC.</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalGta5">Ver mais</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/rdr1.png" class="card-img-top" alt="Red Dead Redemption 2">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">Red Dead Redemption 2</h4>
+        <p class="card-text">Ano de Lançamento: 2018</p>
+        <p class="card-text">Plataformas: PlayStation 4, Xbox One e PC.</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalRdr2">Ver mais</button>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-center py-5">Obras-Primas da Era Atual (4K, SSDs e Híbridos)</h2>
+  <div class="card-group">
+    <div class="card">
+      <img src="img/zelda2.png" class="card-img-top" alt="The Legend of Zelda: Breath of the Wild">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">The Legend of Zelda: Breath of the Wild</h4>
+        <p class="card-text">Ano de Lançamento: 2017</p>
+        <p class="card-text">Plataformas: Nintendo Switch e Nintendo Wii U.</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalZelda">Ver mais</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/tlou1.png" class="card-img-top" alt="The Last of Us Part II">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">The Last of Us Part II</h4>
+        <p class="card-text">Ano de Lançamento: 2020</p>
+        <p class="card-text">Plataformas: PlayStation 4 e PlayStation 5.</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalTlou2">Ver mais</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/ring3.png" class="card-img-top" alt="Elden Ring">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">Elden Ring</h4>
+        <p class="card-text">Ano de Lançamento: 2022</p>
+        <p class="card-text">Plataformas: PS5, PS4, Xbox Series X/S, Xbox One e PC.</p>
+        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalEldenRing">Ver mais</button>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-center py-5">Bem-Vindos ao Amanhã: Leonida, Vice City e a Nova Era</h2>
+  <h1 class="text-center py-5">O título que fecha este acervo e promete ditar as regras do entretenimento digital para os próximos anos.</h1>
+
+  <div class="container">
+    <div class="card mb-3">
+      <img src="img/gta6.png" class="card-img-top" alt="Arte de Grand Theft Auto VI">
+      <div class="card-body">
+        <h4 class="card-title">Data de Lançamento: 19 de Novembro de 2026</h4>
+        <p class="card-text">Plataformas: PlayStation 5 e Xbox Series X/S (com lançamento posterior esperado para PC).</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGta6">Ver mais</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalPacman" tabindex="-1" aria-labelledby="modalPacmanLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPacmanLabel">Pac-Man</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~7 milhões de cópias (Atari 2600)</p>
+          <p><strong>Resumo e História:</strong> O jogador controla um personagem redondo amarelo preso em um labirinto azul cheio de pontos luminosos. A missão é comer todas as pílulas da tela enquanto foge de quatro fantasmas coloridos (Blinky, Pinky, Inky e Clyde). Ao ingerir uma "pílula de força", Pac-Man ganha poderes temporários para se vingar e devorar os fantasmas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalSonic2" tabindex="-1" aria-labelledby="modalSonic2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSonic2Label">Sonic the Hedgehog 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~6 milhões de cópias</p>
+          <p><strong>Resumo e História:</strong> O maquiavélico cientista Dr. Robotnik (Eggman) aprisiona os animais indefesos da Ilha do Oeste em robôs para construir a estação espacial Ovo da Morte (Death Egg). O ouriço azul Sonic se junta à raposa de duas caudas Tails para coletar as sete Esmeraldas do Caos e deter o vilão em altíssima velocidade.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalMarioWorld" tabindex="-1" aria-labelledby="modalMarioWorldLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMarioWorldLabel">Super Mario World</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~20,6 milhões de cópias</p>
+          <p><strong>Resumo e História:</strong> Durante as férias de Mario e Luigi na Terra dos Dinossauros, a Princesa Peach é novamente sequestrada por Bowser e seus filhos (os Koopalingas). Unindo forças com o simpático dinossauro Yoshi, os irmãos exploram a Ilha dos Dinossauros para libertar os ovos aprisionados, derrotar os vilões e salvar Peach.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalMario64" tabindex="-1" aria-labelledby="modalMario64Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMario64Label">Super Mario 64</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~11,9 milhões de cópias</p>
+          <p><strong>Resumo e História:</strong> A Princesa Peach convida Mario ao seu castelo para comer um bolo, mas ao chegar lá, Mario descobre que Bowser invadiu o palácio e roubou as Estrelas do Poder, aprisionando-as dentro dos quadros das paredes. Mario precisa saltar para dentro das pinturas 3D, recuperar as estrelas e libertar o castelo.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalFF7" tabindex="-1" aria-labelledby="modalFF7Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFF7Label">Final Fantasy VII</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~10 milhões de cópias (no PS1)</p>
+          <p><strong>Resumo e História:</strong> O mercenário Cloud Strife une-se ao grupo rebelde AVALANCHE para combater a corporação Shinra, que extrai a energia vital do planeta (Lifestream). A missão toma proporções globais quando reaparece Sephiroth, um ex-soldado lendário que pretende invocar um meteoro para destruir o planeta e se tornar um deus.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalGtaSA" tabindex="-1" aria-labelledby="modalGtaSALabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalGtaSALabel">Grand Theft Auto: San Andreas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~27,5 milhões de cópias</p>
+          <p><strong>Resumo e História:</strong> Em 1992, Carl "CJ" Johnson retorna à sua cidade natal de Los Santos após o assassinato de sua mãe. Encontrando sua família despedaçada e sua gangue (Grove Street Families) em decadência, CJ é chantageado por policiais corruptos e precisa retomar o controle dos territórios ao longo do estado de San Andreas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalHalo3" tabindex="-1" aria-labelledby="modalHalo3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalHalo3Label">Halo 3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~14,5 milhões de cópias</p>
+          <p><strong>Resumo e História:</strong> O supersoldado Master Chief retorna à Terra para travar a batalha final contra a aliança alienígena Covenant. Ao lado da inteligência artificial Cortana e do guerreiro Arbiter, Master Chief precisa impedir que o líder Covenant ative os anéis Halo — superarmas capazes de exterminar toda a vida orgânica do universo.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalGta5" tabindex="-1" aria-labelledby="modalGta5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalGta5Label">Grand Theft Auto V (GTA V)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~190+ milhões de cópias</p>
+          <p><strong>Resumo e História:</strong> Três criminosos muito diferentes na cidade fictícia de Los Santos — Michael (um ex-assaltante de bancos aposentado), Franklin (um jovem em busca de oportunidades) e Trevor (um psicopata imprevisível) — se unem para realizar uma série de assaltos arriscados enquanto fogem da polícia e de agentes governamentais corruptos.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalRdr2" tabindex="-1" aria-labelledby="modalRdr2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRdr2Label">Red Dead Redemption 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~65+ milhões de cópias</p>
+          <p><strong>Resumo e História:</strong> Em 1899, no fim da era do Velho Oeste americano, o fora da lei Arthur Morgan e a gangue Van der Linde tentam sobreviver enquanto fogem de agentes federais e caçadores de recompensa. Após um assalto malsucedido na cidade de Blackwater, Arthur precisa escolher entre seus próprios ideais e a lealdade à gangue liderada por Dutch van der Linde, em uma marcante jornada de redenção.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalZelda" tabindex="-1" aria-labelledby="modalZeldaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalZeldaLabel">The Legend of Zelda: Breath of the Wild</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~32+ milhões de cópias</p>
+          <p><strong>Resumo e História:</strong> Após despertar de um sono de 100 anos sem memórias, o cavaleiro Link descobre que o reino de Hyrule foi devastado pela entidade maligna Calamity Ganon. Link precisa explorar um vasto mundo aberto com liberdade total, recuperar seus poderes e libertar as quatro Bestas Divinas para resgatar a Princesa Zelda.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalTlou2" tabindex="-1" aria-labelledby="modalTlou2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTlou2Label">The Last of Us Part II</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~10+ milhões de cópias</p>
+          <p><strong>Resumo e História:</strong> Cinco anos após a perigosa jornada pelos Estados Unidos pós-pandêmicos, Ellie e Joel vivem em Jackson, Wyoming. Quando um evento traumático devasta a paz da comunidade, Ellie embarca em uma busca obsessiva por vingança pelas ruínas de Seattle, enfrentando facções rivais e encarando as devastadoras consequências morais do ciclo de ódio.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalEldenRing" tabindex="-1" aria-labelledby="modalEldenRingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEldenRingLabel">Elden Ring</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Vendas:</strong> ~25+ milhões de cópias</p>
+          <p><strong>Resumo e História:</strong> Nas Terras Intermédias, o Anel Prístino foi destruído, fazendo com que os semideuses descendentes da Rainha Marika reivindicassem seus fragmentos e iniciassem uma guerra devastadora. O jogador controla um Maculado exilado que deve explorar as terras devastadas, derrotar os demônios e lordes locais para reparar o anel e se tornar o novo Lorde Prístino.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalGta6" tabindex="-1" aria-labelledby="modalGta6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalGta6Label">Grand Theft Auto VI</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Ambientação e Universo:</strong> O jogo se passa no estado fictício de Leonida (uma sátira hiperrealista da Flórida), marcando o retorno triunfal da icônica cidade de Vice City. O mapa promete ser o maior e mais detalhado da história da Rockstar Games, reunindo praias tropicais, neon urbano, pântanos perigosos e zonas rurais repletas de vida selvagem e eventos aleatórios.</p>
+          <p><strong>Resumo e História:</strong> Inspirada na célebre dinâmica do casal de criminosos Bonnie e Clyde, a narrativa acompanha a história de Lucia, a primeira protagonista feminina jogável da franquia em 3D, e seu parceiro Jason. Recém-saída da prisão, Lucia tenta reconstruir a vida no submundo do crime ao lado de Jason. Juntos, eles executam assaltos arriscados, navegam por esquemas de gangues locais e tentam sobreviver em um estado marcado pela obsessão por dinheiro fácil, viralização na internet e insanidade cotidiana.</p>
+          <p><strong>Inteligência Artificial de Nova Geração:</strong> Pedestres com rotinas individuais complexas, reatividade realista a crimes e tráfego urbano inteligente.</p>
+          <p><strong>Sátira às Redes Sociais:</strong> O ecossistema do jogo integra plataformas digitais no estilo "TikTok/Instagram" diretamente na mecânica e no enredo, refletindo a cultura do espetáculo da sociedade moderna.</p>
+          <p><strong>Física e Gráficos de Ponta:</strong> Simulação avançada de água, destruição de veículos, densidade de multidões e iluminação por Ray Tracing em tempo real, estabelecendo o teto técnico da geração atual.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+      <div class="col-12 col-md-4 mb-3 mb-md-0">
+        <h5>História dos Videogames</h5>
+        <p class="small mb-0">Da era dos fliperamas aos consoles modernos.</p>
+      </div>
+      <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
+        <a href="index.html" class="text-light text-decoration-none me-2">Start</a>
+        <a href="sobre.html" class="text-light text-decoration-none me-2">Lore</a>
+        <a href="galeria.html" class="text-light text-decoration-none me-2">Reliquias</a>
+        <a href="dados.html" class="text-light text-decoration-none me-2">Easter-eggs</a>
+        <a href="contato.html" class="text-light text-decoration-none">Fale Conosco</a>
+      </div>
+      <div class="col-12 col-md-4 text-center text-md-end">
+        <p class="small mb-0">&copy; 2026 Bruno Gabriel dos Santos</p>
+      </div>
+    </div>
+  </div>
+</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
