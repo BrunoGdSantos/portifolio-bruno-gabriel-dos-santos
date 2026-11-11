@@ -1,5 +1,5 @@
-# [Seu Nome Completo]
-> Estudante de [Nome do Curso - ex: Ciência da Computação]
+# Bruno Gabriel dos Santos
+> Estudante de Analise e Desenvolvimento de Sistemas
 ---
 ### 📫 Contato & Redes Sociais
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-
@@ -7,7 +7,7 @@ badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bruno-gabriel-
 [![E-mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge
 &logo=gmail&logoColor=white)](brunogabrielsantos8820@gmail.com)
 [![Currículo](https://img.shields.io/badge/Currículo-000000?style=for-th
-e-badge&logo=read-the-docs&logoColor=white)](LINK_DO_PDF_OU_SITE)
+e-badge&logo=read-the-docs&logoColor=white)]https://drive.google.com/file/d/1edwytqYyDEQHb1m7sptYyyluKZeJRVnr/view?usp=sharing
 ---
 ### 󰞵 Sobre
 Atualmente cursando o segundo período de Analise e desenvolvimento de sistemas na UNICID. Sou apaixonado por resolver problemas através da
