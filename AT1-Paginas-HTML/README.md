@@ -7,6 +7,5 @@ Para Web (2026.2)**, o sistema mostra imagens, curiosidades e possui 5 sites lin
 * **Linguagem:** HTML5, CSS e JavaScript
 * **Bibliotecas:** Bootstrap
 * **Ferramentas:** VSCode
-* **Modelo de IA:** Gemini
 ## 📊 Resultados e Aprendizados
 O projeto foi um sucesso e demonstrou que linkar paginas numa navbar é fácil e acessivel, aprendi muitas coisas sobre HTML durante o desenvolvimento do projeto.
