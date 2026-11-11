@@ -80,9 +80,10 @@ A especificação de requisitos e regras de negócio está disponível no própr
 - João Vitor Nunes de Aquino
 - Maria Eduarda Pereira Araújo
 
-## 🔗 Acesso ao Projeto
-
-[**Deploy do Dicionário de Dados — GitHub**](https://github.com/BrunoGdSantos/Deploy-do-Dicion-rio-de-Dados)
+## 💻 Deploy do projeto
+[Clique para acessar](https://brunogdsantos.github.io/Deploy-do-Dicion-rio-de-Dados/)
+---
+[Voltar ao início](https://github.com/BrunoGdSantos/portifolio-bruno-gabriel-dos-santos)
 
 ---
 
