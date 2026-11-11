@@ -3,22 +3,19 @@
 ---
 ### 📫 Contato & Redes Sociais
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-
-badge&logo=linkedin&logoColor=white)](LINK_DO_SEU_LINKEDIN)
+badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bruno-gabriel-dos-santos-b7311a429/)
 [![E-mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge
-&logo=gmail&logoColor=white)](mailto:seu-email-profissional@email.com)
+&logo=gmail&logoColor=white)](brunogabrielsantos8820@gmail.com)
 [![Currículo](https://img.shields.io/badge/Currículo-000000?style=for-th
 e-badge&logo=read-the-docs&logoColor=white)](LINK_DO_PDF_OU_SITE)
 ---
 ### 󰞵 Sobre
-Atualmente cursando o [Xº] período de [Nome do Curso] na [Nome da
-Instituição]. Sou apaixonado por resolver problemas através da
-tecnologia e possuo foco em [Área de Interesse - ex: Desenvolvimento
-Backend / Análise de Dados].
-* **Habilidades Técnicas:** [Ex: Python, Java, SQL, AWS, Docker].
+Atualmente cursando o segundo período de Analise e desenvolvimento de sistemas na UNICID. Sou apaixonado por resolver problemas através da
+tecnologia e possuo foco em Desenvolvimento Back-end.
+* **Habilidades Técnicas:** Experiencia em Python SQL e C.
 * **Habilidades Socioemocionais:** Trabalho em equipe, comunicação
 assertiva e pensamento crítico.
-* **Experiência/Projetos Relevantes:** Atuei em [Projeto de Iniciação
-Científica/Estágio] onde desenvolvi [resultado principal].
+* **Experiência/Projetos Relevantes:** Atuei na criação de um banco de dados de salão de beleza, onde desenvolvi Documento de Requisitos, Modelagem ER e Scripts SQL.
 ---
 ### 🛠 Minhas Ferramentas Favoritas
 #### 💻 Linguagens e Tecnologias
