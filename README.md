@@ -63,7 +63,7 @@ Atualmente cursando o segundo período de Análise e Desenvolvimento de Sistemas
 
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Projeto Banco de Dados** | Documento de Requisitos, Modelagem ER e Scripts SQL. | [Ver Projeto](./projeto-banco-dados/) |
+| **Projeto Banco de Dados** | Documento de Requisitos, Modelagem ER e Scripts SQL. | [Ver Projeto](Deploy-do-Dicion-rio-de-Dados-1) |
 
 ---
 
