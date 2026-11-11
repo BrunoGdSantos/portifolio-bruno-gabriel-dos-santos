@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Galeria - James Webb</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="descobertas.html">Descobertas</a></li>
+            <li><a href="galeria.html" class="active">Galeria</a></li>
+            <li><a href="comparacao.html">Comparação</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>Obras de arte cósmicas.</h1>
+        <p class="subtitle">Navegue pelas capturas em alta resolução mais impressionantes do infravermelho profundo. Clique em qualquer foto para ampliar.</p>
+
+        <div class="bento-grid">
+            <article class="bento-card">
+                <h3>Pilares da Criação</h3>
+                <p>Gigantescas estruturas de gás e poeira na Nebulosa da Águia. Distância: 6.500 anos-luz.</p>
+                <img src="image/pilares.jpg" data-highres="image/pilares.jpg" alt="Pilares da Criação">
+            </article>
+
+            <article class="bento-card">
+                <h3>Galáxia do Sombrero</h3>
+                <p>A imponente galáxia M104 vista quase de perfil, a cerca de 30 milhões de anos-luz da Terra.</p>
+                <img src="image/sombrero.jpg" data-highres="image/sombrero.jpg" alt="Galáxia do Sombrero">
+            </article>
+
+            <article class="bento-card">
+                <h3>Nebulosa de Órion</h3>
+                <p>A intensa radiação de estrelas jovens esculpindo o gás ao seu redor (Barra de Órion).</p>
+                <img src="image/orion.jpg" data-highres="image/orion.jpg" alt="Nebulosa de Órion">
+            </article>
+
+            <article class="bento-card">
+                <h3>Nebulosa da Tarântula</h3>
+                <p>A maior e mais brilhante região de formação de estrelas, localizada na Grande Nuvem de Magalhães.</p>
+                <img src="image/tarantula.jpg" data-highres="image/tarantula.jpg" alt="Nebulosa da Tarântula">
+            </article>
+
+            <article class="bento-card">
+                <h3>Quinteto de Stephan</h3>
+                <p>Um espetáculo gravitacional: um grupo de galáxias colidindo e interagindo no espaço profundo.</p>
+                <img src="image/quinto.jpg" data-highres="image/quinto.jpg" alt="Quinteto de Stephan">
+            </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+            <p>Para ver os arquivos originais, acesse a <a href="https://science.nasa.gov/mission/webb/multimedia/images/" target="_blank" class="link-ext">Galeria Oficial da NASA</a>.</p>
+        </div>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2026 Telescópio James Webb.</p>
+        <p>Desenvolvido por Bruno Gabriel e Alex Sander</p>
+    </footer>
+
+    <!-- MODAL E SCRIPT PARA AMPLIAR IMAGENS -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn">&times;</span>
+        <p id="loadingText" style="position: absolute; color: white; font-size: 1.2rem; display: none; z-index: 1999;">Carregando alta resolução...</p>
+        <img class="modal-content" id="expandedImg">
+    </div>
+
+    <script>
+        const modal = document.getElementById("imageModal");
+        const expandedImg = document.getElementById("expandedImg");
+        const closeBtn = document.querySelector(".close-btn");
+        const loadingText = document.getElementById("loadingText");
+        const allImages = document.querySelectorAll("main img");
+
+        allImages.forEach(img => {
+            img.addEventListener("click", function() {
+                modal.classList.add("show");
+                loadingText.style.display = "block";
+                expandedImg.style.opacity = "0"; 
+                
+                const highResUrl = this.getAttribute("data-highres") || this.src;
+                expandedImg.src = highResUrl;
+
+                expandedImg.onload = function() {
+                    loadingText.style.display = "none";
+                    expandedImg.style.opacity = "1";
+                }
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove("show");
+            setTimeout(() => { expandedImg.src = ""; }, 300);
+        }
+
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", function(e) {
+            if (e.target === modal || e.target === loadingText) closeModal();
+        });
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") closeModal();
+        });
+    </script>
+</body>
+</html>
