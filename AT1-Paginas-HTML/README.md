@@ -47,6 +47,6 @@ Este projeto foi desenvolvido sem a utilização de ferramentas de inteligência
 - Alex Sander
 
 ## 💻 Deploy do projeto
-[Clique para acessar]https://brunogdsantos.github.io/site-webb3/
+[Clique para acessar](https://brunogdsantos.github.io/site-webb3/)
 ---
 [Voltar ao início]https://github.com/BrunoGdSantos/portifolio-bruno-gabriel-dos-santos
